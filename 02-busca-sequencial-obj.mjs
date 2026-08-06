@@ -1,0 +1,13 @@
+import {objNomes} from "./data/vetor-obj-nomes.mjs"
+
+function buscaSequencial(vetor, fnComp){
+    for(let i = 0; i< vetor.length; i++){
+        if(fnComp(vetor[i])) return i
+    }
+}
+
+function compararNome(obj){
+    return obj.first_name === "ALEXANDRE"
+}
+
+console.log("Posição do Alexandre ", buscaSequencial(objNomes, compararNome))
