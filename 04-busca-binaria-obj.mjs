@@ -26,4 +26,5 @@ function comparar(valorMeio,  valorBuscar = "ALEXANDRE"){
     else if (valorBuscar > valorMeio.first_Name) return 1
     else return -1
 }
+
 console.log("Posição de first_name === ALEXANDRE", buscaBinaria(objNomes, comparar))
